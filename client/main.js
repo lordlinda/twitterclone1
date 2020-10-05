@@ -1,6 +1,7 @@
 console.log('hello')
 const form = document.querySelector('form')
-const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000/mews' : 'https://twitterclone1.vercel.app/'
+const API_URL = (window.location.hostname === '127.0.0.1' || window.location.origin === "file://") ? 'http://localhost:5000/mews' : 'https://meower-api.now.sh/v2/mews';
+console.log(window.location)
 
 const loading = document.querySelector('.loading')
 const mewsList = document.querySelector('.mews')
