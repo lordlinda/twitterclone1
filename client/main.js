@@ -1,6 +1,6 @@
 console.log('hello')
 const form = document.querySelector('form')
-const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000/mews' : null
+const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000/mews' : 'http://localhost:5000/mews'
 
 const loading = document.querySelector('.loading')
 const mewsList = document.querySelector('.mews')
