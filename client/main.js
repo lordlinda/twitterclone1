@@ -48,6 +48,7 @@ function listAllMews() {
         })
         .then(res => res.json())
         .then(mews => {
+            const {mews} =mews
             loading.style.display = 'none'
             form.style.display = 'block'
             console.log(mews)
