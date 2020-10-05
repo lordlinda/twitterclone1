@@ -17,6 +17,7 @@ app.use(express.json())
 app.get('/mews', (req, res) => {
     mews.find()
         .then(mews => {
+            
             res.json(mews)
         })
 
