@@ -47,13 +47,11 @@ function listAllMews() {
             }
         })
         .then(res => res.json())
-        .then(mews => {
-            const {mews} =mews
+        .then(mews=> {
             loading.style.display = 'none'
             form.style.display = 'block'
-            console.log(mews)
-            mews.reverse()
-            mews.forEach(mew => {
+            mews.mews.reverse()
+            mews.mews.forEach(mew => {
                 const header = document.createElement('h3')
                 header.textContent = mew.name
                 const content = document.createElement('p')
